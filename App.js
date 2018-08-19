@@ -1,23 +1,48 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <View style={styles.container}>
+                <View style={styles.squareRow}>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                </View>
+                <View style={styles.squareRow}>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                </View>
+
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    squareRow: {
+        flex: 1,
+        flexDirection: 'row',
+        borderColor: 'red',
+        backgroundColor: 'lightblue'
+    },
+    square: {
+        flex: 1,
+        backgroundColor: 'blue',
+        aspectRatio: 1,
+        borderWidth: 1,
+        borderColor: 'black',
+    }
 });

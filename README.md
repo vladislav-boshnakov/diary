@@ -203,4 +203,10 @@ If this causes problems for you, you may want to try changing your terminal's co
 =======
 # diary
 A minimalist diary app for your phone
->>>>>>> 843b3fa3e29de51605e2c63a8c780afab7d428b6
+
+
+If you're running this inside webstorm, you need to run the following commands in the embedded terminal:
+    npm install -g react-native-cli
+    npm install --save @types/react
+    npm install --save @types/react-native 
+Or alternatively through Settings > Languages > JavaScript > Libraries | Download : react & react native

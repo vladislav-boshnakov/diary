@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # expo
@@ -78,4 +78,7 @@ typings/
 
 # next.js build output
 .next
->>>>>>> 843b3fa3e29de51605e2c63a8c780afab7d428b6
+
+#WebStorm Stuff
+*.idea
+
