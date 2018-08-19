@@ -1,26 +1,47 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
+import {Col, Grid, Row} from "react-native-easy-grid";
 
 export default class App extends React.Component {
     render() {
         return (
-            <View style={styles.container}>
-                <View style={styles.squareRow}>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                </View>
-                <View style={styles.squareRow}>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                    <View style={styles.square}/>
-                </View>
-
-            </View>
+            <Grid>
+                <Col>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                </Col>
+                <Col>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                </Col>
+                <Col>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                </Col>
+                <Col>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                </Col>
+                <Col>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                    <Row></Row>
+                </Col>
+            </Grid>
         );
     }
 }
