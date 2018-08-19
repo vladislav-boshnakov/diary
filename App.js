@@ -18,8 +18,28 @@ export default class App extends React.Component {
                     <View style={styles.square}/>
                     <View style={styles.square}/>
                     <View style={styles.square}/>
+                </View>                
+                <View style={styles.squareRow}>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                </View>                
+                <View style={styles.squareRow}>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                </View>                
+                <View style={styles.squareRow}>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
+                    <View style={styles.square}/>
                 </View>
-
             </View>
         );
     }
@@ -27,15 +47,16 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 0,
+        aspectRatio: 1,
         flexDirection: 'column',
-        alignItems: 'center',
         justifyContent: 'center'
     },
     squareRow: {
         flex: 1,
         flexDirection: 'row',
         borderColor: 'red',
+        aspectRatio: 5,
         backgroundColor: 'lightblue'
     },
     square: {
